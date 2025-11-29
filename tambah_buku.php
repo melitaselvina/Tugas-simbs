@@ -41,7 +41,7 @@
             <h1 class="mb-2">Tambah Data Buku</h1>
             <a href="index.php" class="mb-2">Kembali</a>
             <div class="col-md-6">
-                <form action="" method="POST"> 
+                <form action="" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label class="form-label fw-bold">Judul</label>
                         <input type="text" class="form-control" name="judul" id="judul" placeholder="Judul Buku" autocomplete="off" required>
@@ -66,6 +66,10 @@
                     <div class="mb-3">
                         <label class="form-label fw-bold">Tahun</label>
                         <input type="number" class="form-control" name="tahun" id="tahun" placeholder="Tahun Terbit" autocomplete="off" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Gambar</label>
+                        <input type="file" class="form-control" name="img" id="img" required>
                     </div>
                     <div class="mb-3">
                         <button type="submit" name="tombol_submit" class="btn-sm btn-primary">Submit</button>

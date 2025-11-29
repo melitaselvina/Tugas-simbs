@@ -116,6 +116,7 @@ session_start();
                     <th>Tanggal Input</th>
                     <th>Penulis</th>
                     <th>Judul</th>
+                    <th>Gambar</th>
                     <th>Aksi</th>
                 </tr>
                 <?php $no = $awalData + 1; ?>
@@ -129,6 +130,9 @@ session_start();
                     <td> <?= $data['tanggal_input'] ?> </td>
                     <td> <?= $data['penulis'] ?> </td>
                     <td> <?= $data['judul'] ?> </td>
+                    <td> 
+                        <img src="img/<?= $data['gambar'] ?> " height="70" width="70" alt="">
+                    </td>
                     <td>
                         <a href="ubah_buku.php?id_buku=<?= $data['id_buku'] ?>">
                             <button class="btn-sm btn-success">Edit</button> </a>                        

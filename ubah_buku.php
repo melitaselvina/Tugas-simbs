@@ -46,7 +46,7 @@
             <h1 class="mb-2">Ubah Data Buku</h1>
             <a href="index.php" class="mb-2">Kembali</a>
             <div class="col-md-6">
-                <form action="" method="POST">
+                <form action="" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id_buku" value="<?= $buku['id_buku'] ?>">      
                     <div class="mb-3">
                         <label class="form-label fw-bold">Judul</label>
@@ -79,6 +79,11 @@
                         <label class="form-label fw-bold">Tahun</label>
                         <input type="number" class="form-control" name="tahun" id="tahun" 
                                value="<?= $buku['tahun'] ?>" autocomplete="off" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gambar" class="form-label fw-bold">Gambar</label>
+                        <input type="file" class="form-control" name="img" id="img">
+                        <small class="form-text text-muted">Maksimal 2MB (JPG/JPEG/PNG)</small>
                     </div>
                     <div class="mb-3">
                         <button type="submit" name="tombol_submit" class="btn-sm btn-primary">Submit Perubahan</button>
